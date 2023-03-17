@@ -1,13 +1,13 @@
 {% set name = "globus-automate-client" %}
-{% set version = "0.16.1" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/globus-automate-client-{{ version }}.tar.gz
-  sha256: 5218391972389626a7b2444a314f74541d153a9531a897e9adfe999fdb17f9d0
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e7d3133fdc8582c28bf14b3d2ee0dfd49944dc4c43b8c1e0466d71d756ff1b9f
 
 build:
   entry_points:
@@ -20,7 +20,7 @@ requirements:
   host:
     - pip
     - python >=3.6.3,<4.0.0
-    - poetry >=0.12
+    - poetry >=1.0.0
   run:
     - arrow >=1.1.1,<2.0.0
     - globus-sdk >=3.1,<4.0
