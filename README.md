@@ -1,11 +1,11 @@
-About globus-automate-client
-============================
+About globus-automate-client-feedstock
+======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/globus-automate-client-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/globus-automate-client/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/globus-automate-client-feedstock/blob/main/LICENSE.txt)
 
 Summary: Client for the Globus Flows service
 
