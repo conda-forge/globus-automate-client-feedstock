@@ -1,5 +1,5 @@
 {% set name = "globus-automate-client" %}
-{% set version = "0.17.1" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 35a8701b712b9231016ec07b51cac288411218d35d55f9829acd7b312ffc8dbe
+  sha256: a07c3c676dbb5480a510e51f9ee10dc641ba4464d058abc8aa9df8dfed6d3911
 
 build:
   entry_points:
     - globus-automate = globus_automate_client.cli.main:app
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
